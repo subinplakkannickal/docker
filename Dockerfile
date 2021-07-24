@@ -1,5 +1,8 @@
 FROM ubuntu:21.04
 
+ENV TZ=Asia/Kolkata
+RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
+
 RUN apt-get update && apt-get -y install gawk wget git-core \
     diffstat unzip texinfo gcc-multilib build-essential \
     chrpath socat cpio python python3 python3-pip \
