@@ -8,3 +8,5 @@ if ! shopt -oq posix; then
         . /etc/bash_completion
     fi
 fi
+
+export PS1="\[\033[33m\]\u@\h \[\033[34m\]\w\[\033[37m\]\$ "
