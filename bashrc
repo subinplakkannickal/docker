@@ -9,4 +9,8 @@ if ! shopt -oq posix; then
     fi
 fi
 
+alias ll="ls -l"
+alias ..="cd .."
+alias ...="cd ../.."
+
 export PS1="\[\033[33m\]\u@\h \[\033[34m\]\w\[\033[37m\]\$ "
