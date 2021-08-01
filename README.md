@@ -14,8 +14,8 @@ This repository is to maintain the docker file for building yocto
         --device /dev/net/tun:/dev/net/tun \
         --env DISPLAY=$DISPLAY \
         --hostname yocto \
-        --volume /<absolute path of yocto>:/home/<username>/yocto \
         --cap-add NET_ADMIN \ 
         --network "host" \
+        --volume /<absolute path of yocto>:/home/<username>/yocto \
         poky:1.0
 
