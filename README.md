@@ -16,6 +16,6 @@ This repository is to maintain the docker file for building yocto
         --hostname yocto \
         --cap-add NET_ADMIN \ 
         --network "host" \
-        --volume /<absolute path of yocto>:/home/<username>/yocto \
+        --volume <absolute path of yocto>:/home/<username>/yocto \
         poky:1.0
 
