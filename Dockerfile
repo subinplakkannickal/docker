@@ -22,7 +22,7 @@ RUN DEBIAN_FRONTEND="noninteractive" apt-get install \
 ARG USERNAME=dev
 ARG PUID=1000
 ARG PGID=1000
-ARG PASSWORD=docker
+ARG PASSWORD=""
 
 RUN groupadd -g ${PGID} ${USERNAME} \
             && useradd -u ${PUID} -g ${USERNAME} -d /home/${USERNAME} ${USERNAME} \

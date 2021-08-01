@@ -9,13 +9,5 @@ This repository is to maintain the docker file for building yocto
 
 ### Run container
 
-    docker run -it \
-        --name poky-one \
-        --device /dev/net/tun:/dev/net/tun \
-        --env DISPLAY=$DISPLAY \
-        --hostname yocto \
-        --cap-add NET_ADMIN \ 
-        --network "host" \
-        --volume <absolute path of yocto>:/home/<username>/yocto \
-        poky:1.0
+    docker run -it --name poky-one --device /dev/net/tun:/dev/net/tun --env DISPLAY=$DISPLAY --hostname yocto-container --cap-add NET_ADMIN --network "host" --volume <absolute path of yocto>:/home/<username>/yocto poky:1.0
 
